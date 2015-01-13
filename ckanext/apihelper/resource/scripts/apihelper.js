@@ -6,10 +6,11 @@ ckan.module('apihelper', function (jQuery, _) {
     },
     _onChange: function (e) {
       var helparea = $('#apihelper-help');
+      var actions = $('#field-actions')
       var help_text = "Select an endpoint to see it's documentation.";
       // get element only if it exists
-      if(action_help[e.val] !== undefined) {
-        help_text = action_help[e.val];
+      if(action_help[actions.val()] !== undefined) {
+        help_text = action_help[actions.val()];
       }
       // get the newlines converted properly
       help_text = help_text.replace(/\n/g, '<br />')

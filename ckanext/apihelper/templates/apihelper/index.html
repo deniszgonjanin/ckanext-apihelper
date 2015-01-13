@@ -42,7 +42,7 @@
         {% endblock %}
 
         {# Submit button #}
-        <button class="btn" name="save" data-module-action="{{ action }}" data-module="apihelper-submit" value="finish">Submit</button>
+        <button class="btn mrgn-tp-sm" name="save" data-module-action="{{ action }}" data-module="apihelper-submit" value="finish">Submit</button>
 
         {# TODO: Area to show API ouput #}
         <pre id="apihelper-output" class="invisible"></pre>
@@ -54,15 +54,17 @@
 {% endblock %}
 
 {% block secondary %}
-  <section class="module module-narrow">
-    <div class="module context-info">
-      <div class="module-content">
-        <h1 class="heading">API Helper</h1>
+  <div class="col-md-3 col-md-push-9"
+    <section class="panel panel-info">
+      <header class="panel-heading">
+        <h3 class="panel-title">API Helper</h1>
+      </header>
+      <div class="panel panel-body">
         <p>The API Helper shows the documentation for publically accessible API
         endpoints and allows you make API calls in a friendly interface.</p>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 {% endblock %}
 
 
