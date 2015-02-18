@@ -14,10 +14,6 @@
 
 
 {% block content_primary_nav %}
-{{ h.build_nav_icon('apihelper_get', _('Get')) }}
-{{ h.build_nav_icon('apihelper_create', _('Create')) }}
-{{ h.build_nav_icon('apihelper_update', _('Update')) }}
-{{ h.build_nav_icon('apihelper_delete', _('Delete')) }}
 {% endblock %}
 
 {% block primary_content_inner %}
@@ -25,12 +21,10 @@
     <div class="module-content">
       {% block action_form %}
       <form class="dataset-form form-horizontal" method="get">
-        <h1 class="page-heading">{{ action | upper }} API</h1>
         {# Select action #}
         {{ h.snippet('apihelper/snippets/form_action_list.html', action=action) }}
 
-        {# Documentation #}
-        <div id="apihelper-help">Select an endpoint to see it's documentation.</div>
+        <div id="apihelper-help">Select an API call to see it's documentation.</div>
 
         {# Area to give form parameters #}
         {% block apihelper_get_params %}
@@ -57,11 +51,35 @@
   <div class="col-md-3 col-md-push-9"
     <section class="panel panel-info">
       <header class="panel-heading">
-        <h3 class="panel-title">API Helper</h1>
+        <h3 class="panel-title">
+            {% if h.lang() == 'fr' %}
+                Comment utiliser cette page
+            {% else %}
+                How to use this page
+            {% endif %}
+        </h3>
       </header>
       <div class="panel panel-body">
-        <p>The API Helper shows the documentation for publically accessible API
-        endpoints and allows you make API calls in a friendly interface.</p>
+          {% if h.lang() == 'fr' %}
+          <p>
+              Sélectionnez l’appel d’interface de programmation d’application (API) pour lequel vous souhaitez consulter la documentation. Celle-ci contient une description de l’appel, la liste des paramètres qui peuvent être transmis à chaque appel ainsi que leur description.
+
+              Vous pouvez effectuer un appel d’API en cliquant sur le bouton ci-dessous. Si l’appel exige la transmission de paramètres, inscrivez-les dans les boîtes de paires clé/valeur; ils seront alors transmis sous forme de chaînes encodées en URL.
+
+              Pour interagir avec l’API dans le langage de programmation de votre choix, <a href="https://github.com/ckan/ckan/wiki/CKAN-API-Clients">consultez l’adresse suivante, où vous trouverez la bibliothèque client correspondante</a>
+
+          </p>
+
+          {% else %}
+          <p>
+              Select an API call for which you wish to see the documentation. The documentation shows the description of the call, as well as what parameters can be passed to each call, as well as the parameter descriptions.
+
+              You can execute an API call by clicking on the button below. If your call requires parameters to be passed, you can use the key/value pair boxes to enter said parameter and they will be passed as url-encoded strings.
+
+              To interact with the API in your favourite programming language, <a href="https://github.com/ckan/ckan/wiki/CKAN-API-Clients">check this page for a suitable client library:</a>
+
+          </p>
+          {% endif %}
       </div>
     </section>
   </div>
