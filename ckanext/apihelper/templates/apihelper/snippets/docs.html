@@ -3,30 +3,36 @@
         <pre>
 Return a list of the names of the site's groups.
 
-:param order_by: the field to sort the list by, must be ``'name'`` or
+<b><b>:param</b></b> order_by: the field to sort the list by, must be ``'name'`` or
 ``'packages'`` (optional, default: ``'name'``) Deprecated use sort.
 :type order_by: string
-:param sort: sorting of the search results.  Optional.  Default:
+
+<b>:param</b> sort: sorting of the search results.  Optional.  Default:
 "name asc" string of field name and sort-order. The allowed fields are
 'name', 'package_count' and 'title'
 :type sort: string
-:param groups: a list of names of the groups to return, if given only
+
+<b>:param</b> groups: a list of names of the groups to return, if given only
 groups whose names are in this list will be returned (optional)
 :type groups: list of strings
-:param all_fields: return group dictionaries instead of just names. Only
+
+<b>:param</b> all_fields: return group dictionaries instead of just names. Only
 core fields are returned - get some more using the include_* options.
 Returning a list of packages is too expensive, so the `packages`
 property for each group is deprecated, but there is a count of the
 packages in the `package_count` property.
 (optional, default: ``False``)
 :type all_fields: boolean
-:param include_extras: if all_fields, include the group extra fields
+
+<b>:param</b> include_extras: if all_fields, include the group extra fields
 (optional, default: ``False``)
 :type include_extras: boolean
-:param include_tags: if all_fields, include the group tags
+
+<b>:param</b> include_tags: if all_fields, include the group tags
 (optional, default: ``False``)
 :type include_tags: boolean
-:param include_groups: if all_fields, include the groups the groups are in
+
+<b>:param</b> include_groups: if all_fields, include the groups the groups are in
 (optional, default: ``False``)
 :type include_groups: boolean
 
@@ -39,19 +45,25 @@ packages in the `package_count` property.
         <pre>
 Renvoie la liste des noms des groupes du site.
 
-:param order_by: Le paramètre de classement de la liste; il doit s’agir de ``'name'`` ou de ``'packages'`` (optional, default: ``'name'``). Obsolète; utiliser « sort ».
+<b>:param</b> order_by: Le paramètre de classement de la liste; il doit s’agir de ``'name'`` ou de ``'packages'`` (optional, default: ``'name'``). Obsolète; utiliser « sort ».
 :type order_by: Chaîne
-:param sort: Classification des résultats de recherche. Facultatif. Par défaut : "name asc", soit la chaîne comprenant le nom du champ et l’ordre de classement. Les champs permis sont 'name', 'package_count' et 'title'.
+
+<b>:param</b> sort: Classification des résultats de recherche. Facultatif. Par défaut : "name asc", soit la chaîne comprenant le nom du champ et l’ordre de classement. Les champs permis sont 'name', 'package_count' et 'title'.
 :type sort: Chaîne
-:param groups: : Liste des noms des groupes qui seront renvoyés; le fait d’indiquer ce paramètre entraînera le renvoi exclusif des groupes dont le nom figure dans la liste (facultatif).
+
+<b>:param</b> groups: : Liste des noms des groupes qui seront renvoyés; le fait d’indiquer ce paramètre entraînera le renvoi exclusif des groupes dont le nom figure dans la liste (facultatif).
 :type groups: Liste de chaînes
-:param all_fields: Renvoie les dictionnaires des groupes plutôt que seulement leurs noms. Seuls les champs principaux sont renvoyés. Pour en consulter d’autres, utilisez les options include_*. Le renvoi d’une liste de paquetages est trop lourd. La propriété `packages` pour chaque groupe est donc obsolète. On peut toutefois accéder au nombre des paquetages à partir de `package_count`. (Facultatif. Par défaut : ``False``.)
+
+<b>:param</b> all_fields: Renvoie les dictionnaires des groupes plutôt que seulement leurs noms. Seuls les champs principaux sont renvoyés. Pour en consulter d’autres, utilisez les options include_*. Le renvoi d’une liste de paquetages est trop lourd. La propriété `packages` pour chaque groupe est donc obsolète. On peut toutefois accéder au nombre des paquetages à partir de `package_count`. (Facultatif. Par défaut : ``False``.)
 :type all_fields: Booléen
-:param include_extras: Si all_fields est utilisé, comprend les champs supplémentaires du groupe. (Facultatif. Par défaut : ``False``)
+
+<b>:param</b> include_extras: Si all_fields est utilisé, comprend les champs supplémentaires du groupe. (Facultatif. Par défaut : ``False``)
 :type include_extras: Booléen
-:param include_tags: Si all_fields est utilisé, comprend les étiquettes du groupe. (Facultatif. Par défaut : ``False``)
+
+<b>:param</b> include_tags: Si all_fields est utilisé, comprend les étiquettes du groupe. (Facultatif. Par défaut : ``False``)
 :type include_tags: Booléen
-:param include_groups: Si all_fields est utilisé, comprend les groupes auxquels les groupes appartiennent. (Facultatif. Par défaut : ``False``)
+
+<b>:param</b> include_groups: Si all_fields est utilisé, comprend les groupes auxquels les groupes appartiennent. (Facultatif. Par défaut : ``False``)
 :type include_groups: Booléen
 
 :rtype: Liste de chaînes
@@ -63,30 +75,36 @@ Renvoie la liste des noms des groupes du site.
         <pre>
 Return a list of the names of the site's groups.
 
-:param order_by: the field to sort the list by, must be ``'name'`` or
+<b>:param</b> order_by: the field to sort the list by, must be ``'name'`` or
 ``'packages'`` (optional, default: ``'name'``) Deprecated use sort.
 :type order_by: string
-:param sort: sorting of the search results.  Optional.  Default:
+
+<b>:param</b> sort: sorting of the search results.  Optional.  Default:
 "name asc" string of field name and sort-order. The allowed fields are
 'name', 'package_count' and 'title'
 :type sort: string
-:param groups: a list of names of the groups to return, if given only
+
+<b>:param</b> groups: a list of names of the groups to return, if given only
 groups whose names are in this list will be returned (optional)
 :type groups: list of strings
-:param all_fields: return group dictionaries instead of just names. Only
+
+<b>:param</b> all_fields: return group dictionaries instead of just names. Only
 core fields are returned - get some more using the include_* options.
 Returning a list of packages is too expensive, so the `packages`
 property for each group is deprecated, but there is a count of the
 packages in the `package_count` property.
 (optional, default: ``False``)
 :type all_fields: boolean
-:param include_extras: if all_fields, include the group extra fields
+
+<b>:param</b> include_extras: if all_fields, include the group extra fields
 (optional, default: ``False``)
 :type include_extras: boolean
-:param include_tags: if all_fields, include the group tags
+
+<b>:param</b> include_tags: if all_fields, include the group tags
 (optional, default: ``False``)
 :type include_tags: boolean
-:param include_groups: if all_fields, include the groups the groups are in
+
+<b>:param</b> include_groups: if all_fields, include the groups the groups are in
 (optional, default: ``False``)
 :type include_groups: boolean
 
@@ -99,20 +117,26 @@ packages in the `package_count` property.
         <pre>
 Renvoie la liste des noms des groupes du site.
 
-:param order_by:  Paramètre du champ par lequel classer la liste; il doit s’agir de ``'name'`` ou de ``'packages'``. (Facultatif. Par défaut : ``'name'``.) Obsolète; utiliser « sort ».
+<b>:param</b> order_by:  Paramètre du champ par lequel classer la liste; il doit s’agir de ``'name'`` ou de ``'packages'``. (Facultatif. Par défaut : ``'name'``.) Obsolète; utiliser « sort ».
 :type order_by: Chaîne
-:param sort: Classification des résultats de recherche. Facultatif. Par défaut : "name asc", soit la chaîne comprenant le nom du champ et l’ordre de classement. Les champs permis sont 'name', 'package_count' et 'title'.
+
+<b>:param</b> sort: Classification des résultats de recherche. Facultatif. Par défaut : "name asc", soit la chaîne comprenant le nom du champ et l’ordre de classement. Les champs permis sont 'name', 'package_count' et 'title'.
 :type sort: Chaîne
-:param groups: Liste des noms des groupes qui seront renvoyés; le fait d’indiquer ce paramètre entraînera le renvoi exclusif des groupes dont le nom figure dans la liste (facultatif).
+
+<b>:param</b> groups: Liste des noms des groupes qui seront renvoyés; le fait d’indiquer ce paramètre entraînera le renvoi exclusif des groupes dont le nom figure dans la liste (facultatif).
 :type groups: Liste de chaînes
-:param all_fields: Renvoie les dictionnaires des groupes plutôt que seulement leurs noms. Seuls les champs principaux sont renvoyés. Pour en consulter d’autres, utilisez les options include_*. Le renvoi d’une liste de paquetages est trop lourd. La propriété `packages` pour chaque groupe est donc obsolète. On peut toutefois accéder au nombre de paquetages à partir de `package_count`. (Facultatif. Par défaut : ``False``)
+
+<b>:param</b> all_fields: Renvoie les dictionnaires des groupes plutôt que seulement leurs noms. Seuls les champs principaux sont renvoyés. Pour en consulter d’autres, utilisez les options include_*. Le renvoi d’une liste de paquetages est trop lourd. La propriété `packages` pour chaque groupe est donc obsolète. On peut toutefois accéder au nombre de paquetages à partir de `package_count`. (Facultatif. Par défaut : ``False``)
 :type all_fields: Booléen
-:param include_extras: Si all_fields est utilisé, comprend les champs supplémentaires du groupe. (Facultatif. Par défaut : ``False``)
+
+<b>:param</b> include_extras: Si all_fields est utilisé, comprend les champs supplémentaires du groupe. (Facultatif. Par défaut : ``False``)
 :type include_extras: Booléen
-:param include_tags: Si all_fields est utilisé, comprend les étiquettes du groupe.
+
+<b>:param</b> include_tags: Si all_fields est utilisé, comprend les étiquettes du groupe.
 (Facultatif. Par défaut : ``False``)
 :type include_tags: Booléen
-:param include_groups: Si all_fields est utilisé, comprend les groupes auxquels les groupes appartiennent.
+
+<b>:param</b> include_groups: Si all_fields est utilisé, comprend les groupes auxquels les groupes appartiennent.
 (Facultatif. Par défaut : ``False``)
 :type include_groups: Booléen
 
@@ -125,7 +149,7 @@ Renvoie la liste des noms des groupes du site.
         <pre>
 Return the help string for a particular API action.
 
-:param name: Action function name (eg `user_create`, `package_search`)
+<b>:param</b> name: Action function name (eg `user_create`, `package_search`)
 :type name: string
 :returns: The help string for the action function, or None if the function
 does not have a docstring.
@@ -138,7 +162,7 @@ does not have a docstring.
         <pre>
 Renvoie la chaîne d’aide pour une action particulière dans l’API.
 
-:param name: Nom de la fonction d’action (p. ex., `user_create`, `package_search`).
+<b>:param</b> name: Nom de la fonction d’action (p. ex., `user_create`, `package_search`).
 :type name: Chaîne
 :returns: Renvoie la chaîne d’aide pour la fonction d’action, ou « None » si la fonction n’a pas de docstring.
 :rtype: Chaîne
@@ -150,31 +174,37 @@ Renvoie la chaîne d’aide pour une action particulière dans l’API.
         <pre>
 Return a list of the names of the site's organizations.
 
-:param order_by: the field to sort the list by, must be ``'name'`` or
+<b>:param</b> order_by: the field to sort the list by, must be ``'name'`` or
 ``'packages'`` (optional, default: ``'name'``) Deprecated use sort.
 :type order_by: string
-:param sort: sorting of the search results.  Optional.  Default:
+
+<b>:param</b> sort: sorting of the search results.  Optional.  Default:
 "name asc" string of field name and sort-order. The allowed fields are
 'name', 'package_count' and 'title'
 :type sort: string
-:param organizations: a list of names of the groups to return,
+
+<b>:param</b> organizations: a list of names of the groups to return,
 if given only groups whose names are in this list will be
 returned (optional)
 :type organizations: list of strings
-:param all_fields: return group dictionaries instead of just names. Only
+
+<b>:param</b> all_fields: return group dictionaries instead of just names. Only
 core fields are returned - get some more using the include_* options.
 Returning a list of packages is too expensive, so the `packages`
 property for each group is deprecated, but there is a count of the
 packages in the `package_count` property.
 (optional, default: ``False``)
 :type all_fields: boolean
-:param include_extras: if all_fields, include the group extra fields
+
+<b>:param</b> include_extras: if all_fields, include the group extra fields
 (optional, default: ``False``)
 :type include_extras: boolean
-:param include_tags: if all_fields, include the group tags
+
+<b>:param</b> include_tags: if all_fields, include the group tags
 (optional, default: ``False``)
 :type include_tags: boolean
-:param include_groups: if all_fields, include the groups the groups are in
+
+<b>:param</b> include_groups: if all_fields, include the groups the groups are in
 (optional, default: ``False``)
 :type all_fields: boolean
 
@@ -187,22 +217,28 @@ packages in the `package_count` property.
         <pre>
 Renvoie la liste des noms des organisations du site.
 
-:param order_by: Le champ par lequel classer la liste; il doit s’agir de ``'name'`` ou de ``'packages'`` (Facultatif. Par défaut : ``'name'``.) Obsolète; utiliser « sort ».
+<b>:param</b> order_by: Le champ par lequel classer la liste; il doit s’agir de ``'name'`` ou de ``'packages'`` (Facultatif. Par défaut : ``'name'``.) Obsolète; utiliser « sort ».
 :type order_by: Chaîne
-:param sort: Classification des résultats de recherche. Facultatif. Par défaut : "name asc", soit la chaîne comprenant le nom du champ et l’ordre de classement. Les champs permis sont 'name', 'package_count' et 'title'.
+
+<b>:param</b> sort: Classification des résultats de recherche. Facultatif. Par défaut : "name asc", soit la chaîne comprenant le nom du champ et l’ordre de classement. Les champs permis sont 'name', 'package_count' et 'title'.
 :type sort: Chaîne
-:param organizations: Liste des noms des groupes qui seront renvoyés; le fait d’indiquer ce paramètre entraînera le renvoi exclusif des groupes dont le nom figure dans la liste (facultatif).
+
+<b>:param</b> organizations: Liste des noms des groupes qui seront renvoyés; le fait d’indiquer ce paramètre entraînera le renvoi exclusif des groupes dont le nom figure dans la liste (facultatif).
 :type organizations: Liste de chaînes
-:param all_fields: Renvoie les dictionnaires des groupes plutôt que seulement leurs noms. Seuls les champs principaux sont renvoyés. Pour en consulter d’autres, utilisez les options include_*. Le renvoi d’une liste de paquetages est trop lourd. La propriété `packages` pour chaque groupe est donc obsolète. On peut toutefois accéder au nombre de paquetages à partir de `package_count`.
+
+<b>:param</b> all_fields: Renvoie les dictionnaires des groupes plutôt que seulement leurs noms. Seuls les champs principaux sont renvoyés. Pour en consulter d’autres, utilisez les options include_*. Le renvoi d’une liste de paquetages est trop lourd. La propriété `packages` pour chaque groupe est donc obsolète. On peut toutefois accéder au nombre de paquetages à partir de `package_count`.
 (Facultatif, Par défaut : ``False``)
 :type all_fields: Booléen
-:param include_extras: Si all_fields est utilisé, comprend les champs supplémentaires du groupe.
+
+<b>:param</b> include_extras: Si all_fields est utilisé, comprend les champs supplémentaires du groupe.
 (Facultatif. Par défaut : ``False``)
 :type include_extras: Booléen
-:param include_tags: Si all_fields est utilisé, comprend les étiquettes du groupe.
+
+<b>:param</b> include_tags: Si all_fields est utilisé, comprend les étiquettes du groupe.
 (Facultatif. Par défaut : ``False``)
 :type include_tags: Booléen
-:param include_groups: Si all_fields est utilisé, comprend les groupes auxquels les groupes appartiennent.
+
+<b>:param</b> include_groups: Si all_fields est utilisé, comprend les groupes auxquels les groupes appartiennent.
 (Facultatif. Par défaut  ``False``)
 :type all_fields: Booléen
 
@@ -215,9 +251,10 @@ Renvoie la liste des noms des organisations du site.
         <pre>
 Return the details of a organization.
 
-:param id: the id or name of the organization
+<b>:param</b> id: the id or name of the organization
 :type id: string
-:param include_datasets: include a list of the organization's datasets
+
+<b>:param</b> include_datasets: include a list of the organization's datasets
 (optional, default: ``True``)
 :type id: boolean
 
@@ -232,9 +269,10 @@ Return the details of a organization.
         <pre>
 Renvoie les renseignements détaillés sur une organisation.
 
-:param id: Identification ou nom de l’organisation.
+<b>:param</b> id: Identification ou nom de l’organisation.
 :type id: Chaîne
-:param include_datasets: Inclut la liste des ensembles de données de l’organisation.
+
+<b>:param</b> include_datasets: Inclut la liste des ensembles de données de l’organisation.
 (Facultatif. Par défaut : ``True``)
 :type id: Booléen
 
@@ -249,11 +287,12 @@ Renvoie les renseignements détaillés sur une organisation.
         <pre>
 Return a list of the names of the site's datasets (packages).
 
-:param limit: if given, the list of datasets will be broken into pages of
+<b>:param</b> limit: if given, the list of datasets will be broken into pages of
 at most ``limit`` datasets per page and only one page will be returned
 at a time (optional)
 :type limit: integer
-:param offset: when ``limit`` is given, the offset to start
+
+<b>:param</b> offset: when ``limit`` is given, the offset to start
 returning packages from
 :type offset: integer
 
@@ -266,9 +305,10 @@ returning packages from
         <pre>
 Renvoie la liste des noms des ensembles de données du site (packages).
 
-:param limit: Si ce paramètre est indiqué, la liste des ensembles de données sera divisée en pages d’un maximum de ``limit`` ensembles de données, et seule une page sera renvoyée à la fois (facultatif).
+<b>:param</b> limit: Si ce paramètre est indiqué, la liste des ensembles de données sera divisée en pages d’un maximum de ``limit`` ensembles de données, et seule une page sera renvoyée à la fois (facultatif).
 :type limit: Entier relatif
-:param offset: Si ``limit`` est utilisé, il s’agit du décalage à partir duquel les paquetages seront renvoyés.
+
+<b>:param</b> offset: Si ``limit`` est utilisé, il s’agit du décalage à partir duquel les paquetages seront renvoyés.
 :type offset: Entier relatif
 
 :rtype: Liste de chaînes
@@ -280,9 +320,10 @@ Renvoie la liste des noms des ensembles de données du site (packages).
         <pre>
 Return the metadata of a dataset (package) and its resources.
 
-:param id: the id or name of the dataset
+<b>:param</b> id: the id or name of the dataset
 :type id: string
-:param use_default_schema: use default package schema instead of
+
+<b>:param</b> use_default_schema: use default package schema instead of
 a custom schema defined with an IDatasetForm plugin (default: False)
 :type use_default_schema: boolean
 
@@ -295,9 +336,10 @@ a custom schema defined with an IDatasetForm plugin (default: False)
         <pre>
 Renvoie la métadonnée d’un ensemble de données (paquetage) et de ses ressources.
 
-:param id: Identification ou nom de l’ensemble de données.
+<b>:param</b> id: Identification ou nom de l’ensemble de données.
 :type id: Chaîne
-:param use_default_schema: Utilise le schéma du paquetage par défaut au lieu d’un schéma personnalisé défini au moyen de IDatasetForm plugin (Par défaut : False).
+
+<b>:param</b> use_default_schema: Utilise le schéma du paquetage par défaut au lieu d’un schéma personnalisé défini au moyen de IDatasetForm plugin (Par défaut : False).
 :type use_default_schema: Booléen
 
 :rtype: Dictionnaire
@@ -321,31 +363,39 @@ Documentation <http://wiki.apache.org/solr/CommonQueryParameters>`_.
 This action accepts a *subset* of solr's search query parameters:
 
 
-:param q: the solr query.  Optional.  Default: ``"*:*"``
+<b>:param</b> q: the solr query.  Optional.  Default: ``"*:*"``
 :type q: string
-:param fq: any filter queries to apply.  Note: ``+site_id:{ckan_site_id}``
+
+<b>:param</b> fq: any filter queries to apply.  Note: ``+site_id:{ckan_site_id}``
 is added to this string prior to the query being executed.
 :type fq: string
-:param sort: sorting of the search results.  Optional.  Default:
+
+<b>:param</b> sort: sorting of the search results.  Optional.  Default:
 ``'relevance asc, metadata_modified desc'``.  As per the solr
 documentation, this is a comma-separated string of field names and
 sort-orderings.
 :type sort: string
-:param rows: the number of matching rows to return.
+
+<b>:param</b> rows: the number of matching rows to return.
 :type rows: integer
-:param start: the offset in the complete result for where the set of
+
+<b>:param</b> start: the offset in the complete result for where the set of
 returned datasets should begin.
 :type start: integer
-:param facet: whether to enable faceted results.  Default: ``True``.
+
+<b>:param</b> facet: whether to enable faceted results.  Default: ``True``.
 :type facet: string
-:param facet.mincount: the minimum counts for facet fields should be
+
+<b>:param</b> facet.mincount: the minimum counts for facet fields should be
 included in the results.
 :type facet.mincount: integer
-:param facet.limit: the maximum number of values the facet fields return.
+
+<b>:param</b> facet.limit: the maximum number of values the facet fields return.
 A negative value means unlimited. This can be set instance-wide with
 the :ref:`search.facets.limit` config option. Default is 50.
 :type facet.limit: integer
-:param facet.field: the fields to facet upon.  Default empty.  If empty,
+
+<b>:param</b> facet.field: the fields to facet upon.  Default empty.  If empty,
 then the returned facet information is empty.
 :type facet.field: list of strings
 
@@ -366,23 +416,27 @@ some of these are only available on particular Solr versions. See Solr's
 The result of this action is a dict with the following keys:
 
 :rtype: A dictionary with the following keys
-:param count: the number of results found.  Note, this is the total number
+<b>:param</b> count: the number of results found.  Note, this is the total number
 of results found, not the total number of results returned (which is
 affected by limit and row parameters used in the input).
 :type count: integer
-:param results: ordered list of datasets matching the query, where the
+
+<b>:param</b> results: ordered list of datasets matching the query, where the
 ordering defined by the sort parameter used in the query.
 :type results: list of dictized datasets.
-:param facets: DEPRECATED.  Aggregated information about facet counts.
+
+<b>:param</b> facets: DEPRECATED.  Aggregated information about facet counts.
 :type facets: DEPRECATED dictionary
-:param search_facets: aggregated information about facet counts.  The outer
+
+<b>:param</b> search_facets: aggregated information about facet counts.  The outer
 dict is keyed by the facet field name (as used in the search query).
 Each entry of the outer dict is itself a dict, with a "title" key, and
 an "items" key.  The "items" key's value is a list of dicts, each with
 "count", "display_name" and "name" entries.  The display_name is a
 form of the name that can be used in titles.
 :type search_facets: nested dict of dicts.
-:param use_default_schema: use default package schema instead of
+
+<b>:param</b> use_default_schema: use default package schema instead of
 a custom schema defined with an IDatasetForm plugin (default: False)
 :type use_default_schema: boolean
 
@@ -428,23 +482,31 @@ Documentation <http://wiki.apache.org/solr/CommonQueryParameters>`_.
 Cette action accepte un *subset* des paramètres de recherche de Solr :
 
 
-:param q: Requête de Solr. Facultatif. Par défaut : ``"*:*"``.
+<b>:param</b> q: Requête de Solr. Facultatif. Par défaut : ``"*:*"``.
 :type q: Chaîne
-:param fq: Toutes les requêtes de filtre qui seront appliquées. N.B. : ``+site_id:{ckan_site_id}``est ajouté à cette chaîne avant que la requête soit exécutée.
+
+<b>:param</b> fq: Toutes les requêtes de filtre qui seront appliquées. N.B. : ``+site_id:{ckan_site_id}``est ajouté à cette chaîne avant que la requête soit exécutée.
 :type fq: Chaîne
-:param sort: Classification des résultats de recherche. Facultatif. Par défaut : ``'relevance asc, metadata_modified desc'``. Conformément à la documentation sur Solr, il s’agit d’une chaîne de noms de champs et d’ordonnancement de classification, dont les éléments sont séparés par des virgules.
+
+<b>:param</b> sort: Classification des résultats de recherche. Facultatif. Par défaut : ``'relevance asc, metadata_modified desc'``. Conformément à la documentation sur Solr, il s’agit d’une chaîne de noms de champs et d’ordonnancement de classification, dont les éléments sont séparés par des virgules.
 :type sort: Chaîne
-:param rows: Nombre de lignes correspondantes retournées.
+
+<b>:param</b> rows: Nombre de lignes correspondantes retournées.
 :type rows: Entier relatif
-:param start: Décalage dans le résultat complet à partir duquel les ensembles de données commenceront à être renvoyés.
+
+<b>:param</b> start: Décalage dans le résultat complet à partir duquel les ensembles de données commenceront à être renvoyés.
 :type start: Entier relatif
-:param facet: Détermine si les résultats à facettes seront activés ou non. Par défaut : ``True``.
+
+<b>:param</b> facet: Détermine si les résultats à facettes seront activés ou non. Par défaut : ``True``.
 :type facet: Chaîne
-:param facet.mincount: Nombre minimum des champs à facettes qui doit être inclus dans les résultats.
+
+<b>:param</b> facet.mincount: Nombre minimum des champs à facettes qui doit être inclus dans les résultats.
 :type facet.mincount: Entier relatif
-:param facet.limit: Nombre maximum de valeurs renvoyées par les champs à facettes. Une valeur négative signifie que ce nombre est illimité. Il est possible de déterminer ce nombre pour toute l’instance au moyen de l’option de configuration :ref:`search.facets.limit`. Par défaut : 50.
+
+<b>:param</b> facet.limit: Nombre maximum de valeurs renvoyées par les champs à facettes. Une valeur négative signifie que ce nombre est illimité. Il est possible de déterminer ce nombre pour toute l’instance au moyen de l’option de configuration :ref:`search.facets.limit`. Par défaut : 50.
 :type facet.limit: Entier relatif
-:param facet.field: Les champs pour lesquels produire les facettes. Par défaut : vide. Si le champ est vide, la section de renseignements sur les facettes renvoyée est vide.
+
+<b>:param</b> facet.field: Les champs pour lesquels produire les facettes. Par défaut : vide. Si le champ est vide, la section de renseignements sur les facettes renvoyée est vide.
 :type facet.field: Liste de chaînes
 
 
@@ -462,16 +524,20 @@ Les paramètres avancés suivants de Solr sont également pris en charge. N.B. 
 Le résultat de cette action est un « dict » qui comprend les clés suivantes :
 
 :rtype: Un dictionnaire comprenant les clés suivantes :
-:param count: Nombre de résultats trouvés. N.B. : Il s’agit du nombre total de résultats trouvés, et non du nombre total de résultats renvoyés (qui dépend des paramètres de limite et de ligne utilisés dans l’entrée).
+<b>:param</b> count: Nombre de résultats trouvés. N.B. : Il s’agit du nombre total de résultats trouvés, et non du nombre total de résultats renvoyés (qui dépend des paramètres de limite et de ligne utilisés dans l’entrée).
 :type count: Entier relatif
-:param results: Liste ordonnancée des ensembles de données qui répondent aux critères de la requête, dans laquelle l’ordonnancement est défini par le paramètre de classement utilisé dans la requête.
+
+<b>:param</b> results: Liste ordonnancée des ensembles de données qui répondent aux critères de la requête, dans laquelle l’ordonnancement est défini par le paramètre de classement utilisé dans la requête.
 :type results: Liste d’ensembles de données transformés en dictionnaire.
-:param facets: OBSOLÈTE. Information agrégée sur le nombre de facettes.
+
+<b>:param</b> facets: OBSOLÈTE. Information agrégée sur le nombre de facettes.
 :type facets: OBSOLÈTE. Dictionnaire.
-:param search_facets: Information agrégée sur le nombre de facettes. Le « dict » extérieur est mis à la clé par le nom du champ de facette (tel qu’il est indiqué dans la requête de recherche).
+
+<b>:param</b> search_facets: Information agrégée sur le nombre de facettes. Le « dict » extérieur est mis à la clé par le nom du champ de facette (tel qu’il est indiqué dans la requête de recherche).
 Chaque entrée du « dict » extérieur est en elle-même un « dict », et comprend une clé "title" et une clé "items". La valeur de la clé "items" est une liste de « dicts », qui comprennent chacune des entrées "count", "display_name" et "name". Le display_name est une forme de nom qui peut être utilisé dans les titres.
 :type search_facets: Un « dict » imbriqué de « dicts ».
-:param use_default_schema: Utilise le schéma du paquetage par défaut au lieu d’un schéma personnalisé défini au moyen de IDatasetForm plugin. (Par défaut : False).
+
+<b>:param</b> use_default_schema: Utilise le schéma du paquetage par défaut au lieu d’un schéma personnalisé défini au moyen de IDatasetForm plugin. (Par défaut : False).
 :type use_default_schema: Booléen
 
 Un exemple de résultat :
@@ -504,7 +570,7 @@ Le paramètre qui contrôle quels champs sont fournis dans la requête de Solr n
         <pre>
 Return the metadata of a resource.
 
-:param id: the id of the resource
+<b>:param</b> id: the id of the resource
 :type id: string
 
 :rtype: dictionary
@@ -516,7 +582,7 @@ Return the metadata of a resource.
         <pre>
 Renvoie la métadonnée d’une ressource.
 
-:param id: Identification de la ressource.
+<b>:param</b> id: Identification de la ressource.
 :type id: Chaîne
 
 :rtype: Dictionnaire
@@ -532,13 +598,15 @@ By default only free tags (tags that don't belong to a vocabulary) are
 returned. If the ``vocabulary_id`` argument is given then only tags
 belonging to that vocabulary will be returned instead.
 
-:param query: a tag name query to search for, if given only tags whose
+<b>:param</b> query: a tag name query to search for, if given only tags whose
 names contain this string will be returned (optional)
 :type query: string
-:param vocabulary_id: the id or name of a vocabulary, if give only tags
+
+<b>:param</b> vocabulary_id: the id or name of a vocabulary, if give only tags
 that belong to this vocabulary will be returned (optional)
 :type vocabulary_id: string
-:param all_fields: return full tag dictionaries instead of just names
+
+<b>:param</b> all_fields: return full tag dictionaries instead of just names
 (optional, default: ``False``)
 :type all_fields: boolean
 
@@ -554,11 +622,13 @@ Renvoie la liste des étiquettes du site.
 Par défaut, seules les étiquettes libres (qui ne font pas partie d’un vocabulaire) sont fournies. Si l’argument ``vocabulary_id`` est utilisé, seules les étiquettes appartenant au vocabulaire en question seront renvoyées.
 '''
 
-:param query: Recherche de nom d’étiquette; le fait d’utiliser cet élément entraînera le renvoi exclusif des étiquettes dont le nom contient cette chaîne (facultatif).
+<b>:param</b> query: Recherche de nom d’étiquette; le fait d’utiliser cet élément entraînera le renvoi exclusif des étiquettes dont le nom contient cette chaîne (facultatif).
 :type query: Chaîne
-:param vocabulary_id: Identification ou nom d’un vocabulaire; le fait d’utiliser cet élément entraînera le renvoi exclusif des étiquettes qui appartiennent à ce vocabulaire (facultatif).
+
+<b>:param</b> vocabulary_id: Identification ou nom d’un vocabulaire; le fait d’utiliser cet élément entraînera le renvoi exclusif des étiquettes qui appartiennent à ce vocabulaire (facultatif).
 :type vocabulary_id: Chaîne
-:param all_fields: Renvoie les dictionnaires d’étiquettes complets plutôt que seulement leurs noms.
+
+<b>:param</b> all_fields: Renvoie les dictionnaires d’étiquettes complets plutôt que seulement leurs noms.
 (Facultatif. Par défaut : ``False``)
 :type all_fields: Booléen
 
@@ -571,7 +641,7 @@ Par défaut, seules les étiquettes libres (qui ne font pas partie d’un vocabu
         <pre>
 Return the details of a tag and all its datasets.
 
-:param id: the name or id of the tag
+<b>:param</b> id: the name or id of the tag
 :type id: string
 
 :returns: the details of the tag, including a list of all of the tag's
@@ -585,7 +655,7 @@ datasets and their details
         <pre>
 Renvoie les renseignements sur une étiquette et tous ses ensembles de données.
 
-:param id: Nom ou identification de l’étiquette.
+<b>:param</b> id: Nom ou identification de l’étiquette.
 :type id: Chaîne
 
 :returns: Détails de l’étiquette, y compris la liste de tous les ensembles de données des étiquettes et leurs détails.
