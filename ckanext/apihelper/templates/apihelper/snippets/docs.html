@@ -1,0 +1,43 @@
+<div id="docs" style="display:none;">
+    <div id="group_list_en">
+        <pre>
+        Return a list of the names of the site's groups.
+
+        :param order_by: the field to sort the list by, must be ``'name'`` or
+        ``'packages'`` (optional, default: ``'name'``) Deprecated use sort.
+        :type order_by: string
+        :param sort: sorting of the search results.  Optional.  Default:
+        "name asc" string of field name and sort-order. The allowed fields are
+        'name', 'package_count' and 'title'
+        :type sort: string
+        :param groups: a list of names of the groups to return, if given only
+        groups whose names are in this list will be returned (optional)
+        :type groups: list of strings
+        :param all_fields: return group dictionaries instead of just names. Only
+        core fields are returned - get some more using the include_* options.
+        Returning a list of packages is too expensive, so the `packages`
+        property for each group is deprecated, but there is a count of the
+        packages in the `package_count` property.
+        (optional, default: ``False``)
+        :type all_fields: boolean
+        :param include_extras: if all_fields, include the group extra fields
+        (optional, default: ``False``)
+        :type include_extras: boolean
+        :param include_tags: if all_fields, include the group tags
+        (optional, default: ``False``)
+        :type include_tags: boolean
+        :param include_groups: if all_fields, include the groups the groups are in
+        (optional, default: ``False``)
+        :type include_groups: boolean
+
+        :rtype: list of strings
+
+        </pre>
+    </div>
+
+    <div id="group_list_fr">
+        <pre>
+
+        </pre>
+    </div>
+</div>

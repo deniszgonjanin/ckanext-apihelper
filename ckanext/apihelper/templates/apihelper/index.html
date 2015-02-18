@@ -83,11 +83,14 @@
       </div>
     </section>
   </div>
+
+  {% include 'apihelper/snippets/docs.html' %}
 {% endblock %}
 
 
 {%- block scripts %}
 <script>
+  var lang = "{{h.lang()}}"
   var action_help = {{ h.dump_json(h.apihelper_action_list(action)) | safe }};
 </script>
 {{ super() }}

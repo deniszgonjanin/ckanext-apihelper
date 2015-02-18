@@ -19,10 +19,19 @@ class APIHelperPluginClass(p.SingletonPlugin):
         return self.actions
 
     def api_action_list(self, action_type=None):
-        api_actions = self._get_actions()
-        if action_type is None:
-            return api_actions
-        return api_actions.get(action_type, {})
+        return {
+            'group_list': 'group_list',
+            'group_show': 'group_show',
+            'help_show': 'help_show',
+            'organization_list': 'organization_list',
+            'organization_show': 'organization_show',
+            'package_list': 'package_list',
+            'package_show': 'package_show',
+            'package_search': 'package_search',
+            'resource_show': 'resource_show',
+            'tag_list': 'tag_list',
+            'tag_show': 'tag_show'
+        }
 
     #IConfigurer
     def update_config(self, config):

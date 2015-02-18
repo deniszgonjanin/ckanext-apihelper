@@ -9,12 +9,8 @@ ckan.module('apihelper', function (jQuery, _) {
       var actions = $('#field-actions')
       var help_text = "Select an endpoint to see it's documentation.";
       // get element only if it exists
-      if(action_help[actions.val()] !== undefined) {
-        help_text = action_help[actions.val()];
-      }
-      // get the newlines converted properly
-      help_text = help_text.replace(/\n/g, '<br />')
-      helparea.html(help_text);
+      var he = $('#' + actions.val() + '_' + lang).html()
+      helparea.html(he);
     },
   };
 });
