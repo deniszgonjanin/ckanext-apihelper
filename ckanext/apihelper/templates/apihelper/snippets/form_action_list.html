@@ -2,7 +2,13 @@
   <label class="control-label" for="field-actions">{{ _("Actions") }}</label>
   <div class="controls">
     <select id="field-actions" class="form-control" name="actions" data-module="autocomplete apihelper">
-      <option value="">Select an action</option>
+      <option value="">
+          {% if h.lang() == 'fr' %}
+            Sélectionnez l’appel
+          {% else %}
+            Select an action
+          {% endif %}
+      </option>
       {% for a, d in h.apihelper_action_list(action) | dictsort %}
       <option value="{{ a }}">{{ a }}</option>
       {% endfor %}

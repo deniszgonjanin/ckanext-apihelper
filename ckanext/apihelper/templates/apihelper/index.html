@@ -24,7 +24,14 @@
         {# Select action #}
         {{ h.snippet('apihelper/snippets/form_action_list.html', action=action) }}
 
-        <div id="apihelper-help">Select an API call to see it's documentation.</div>
+        <div id="apihelper-help">
+            {% if h.lang() == 'fr' %}
+                Sélectionnez l’appel d’interface de programmation d’application (API) pour lequel vous souhaitez consulter la documentation.
+            {% else %}
+                Select an API call to see it's documentation.
+            {% endif %}
+
+        </div>
 
         {# Area to give form parameters #}
         {% block apihelper_get_params %}
